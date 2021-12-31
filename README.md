@@ -1,5 +1,10 @@
 # React Native Snippets for VS Code
 
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/menelaia.react-native-dev-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=Menelaia.react-native-dev-snippets)
+[![Install](https://vsmarketplacebadge.apphb.com/installs-short/menelaia.react-native-dev-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=Menelaia.react-native-dev-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-star/menelaia.react-native-dev-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=Menelaia.react-native-dev-snippets)
+
+
 Extension provides useful React/React Native snippets that will improve your developer experience.
 
 ## List of supported snippets

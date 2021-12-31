@@ -1,0 +1,48 @@
+{
+  "name": "react-native-snippets",
+  "displayName": "React Native Snippets",
+  "description": "Modern React Native Snippets for faster development",
+  "version": "0.0.1",
+  "author": "Menelaia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/menelaia/react-native-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/menelaia/react-native-snippets/issues"
+  },
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#9774E2",
+    "theme": "dark"
+  },
+  "publisher": "Menelaia",
+  "keywords": [
+    "react-native",
+    "react",
+    "snippets"
+  ],
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/react-native-snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-native-snippetst.json"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/react-native-snippets.json"
+      }
+    ]
+  }
+}

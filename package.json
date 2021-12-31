@@ -1,7 +1,7 @@
 {
   "name": "react-native-snippets",
   "displayName": "React Native Snippets",
-  "description": "Modern React Native Snippets for better development",
+  "description": "Modern React Native Snippets for faster development",
   "version": "0.0.1",
   "author": "Menelaia",
   "license": "MIT",
@@ -13,11 +13,14 @@
     "url": "https://github.com/menelaia/react-native-snippets/issues"
   },
   "icon": "images/logo.png",
-  "publisher": "menelaia",
+  "galleryBanner": {
+    "color": "#9774E2",
+    "theme": "dark"
+  },
+  "publisher": "Menelaia",
   "keywords": [
     "react-native",
     "react",
-    "stylesheet",
     "snippets"
   ],
   "engines": {

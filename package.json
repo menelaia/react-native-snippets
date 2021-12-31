@@ -2,7 +2,7 @@
   "name": "react-native-dev-snippets",
   "displayName": "React Native Snippets",
   "description": "Modern React Native Snippets for faster development",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Menelaia",
   "license": "MIT",
   "repository": {
@@ -38,10 +38,6 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/react-native-snippetst.json"
-      },
-      {
-        "language": "jsx",
-        "path": "./snippets/react-native-snippets.json"
       }
     ]
   }

@@ -10,9 +10,11 @@ Extension provides useful React/React Native snippets that will improve your dev
 
 ## ✨ List of supported snippets
 
+![rnf→](/images/examples/rnf.gif)
+
 ### 🗂️ React Native Components
 
-#### React Native Functional Component with export, `rnf→`
+React Native Functional Component with export, `rnf→`
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
@@ -33,7 +35,7 @@ $1.defaultProps = {
 };
 ```
 
-#### React Native Functional Component with default export, `rnfd→`
+React Native Functional Component with default export, `rnfd→`
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
@@ -54,7 +56,7 @@ $1.defaultProps = {
 };
 ```
 
-#### React Native Functional Component with React.memo default export, `rnfm→`
+React Native Functional Component with React.memo default export, `rnfm→`
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
@@ -79,10 +81,12 @@ export default React.memo($1);
 
 ### 📔 React Redux
 
-#### `rdxi→`
+`rdxi→`
 ```javascript
 import { useDispatch, useSelector } from 'react-redux';
 ```
+
+![rnf→](/images/examples/uef.gif)
 
 ### 📄 Hooks
 

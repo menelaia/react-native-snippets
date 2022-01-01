@@ -1,9 +1,11 @@
 {
+  // Components
   "reactNativeComponent": {
     "prefix": "rnf",
     "body": [
-      "import React from 'react';",
-      "import { View, Text } from 'react-native';",
+      "import React, { useCallback, useEffect, useMemo, useState } from 'react';",
+      "import { Text, View } from 'react-native';",
+      "import { useDispatch, useSelector } from 'react-redux';",
       "import PropTypes from 'prop-types';",
       "",
       "export function ${1:${TM_FILENAME_BASE}}(props) {",
@@ -29,8 +31,9 @@
   "reactNativeComponentDefault": {
     "prefix": "rnfd",
     "body": [
-      "import React from 'react';",
-      "import { View, Text } from 'react-native';",
+      "import React, { useCallback, useEffect, useMemo, useState } from 'react';",
+      "import { Text, View } from 'react-native';",
+      "import { useDispatch, useSelector } from 'react-redux';",
       "import PropTypes from 'prop-types';",
       "",
       "export default function ${1:${TM_FILENAME_BASE}}(props) {",
@@ -56,8 +59,9 @@
   "reactNativeMemoComponent": {
     "prefix": "rnfm",
     "body": [
-      "import React from 'react';",
-      "import { View, Text } from 'react-native';",
+      "import React, { useCallback, useEffect, useMemo, useState } from 'react';",
+      "import { Text, View } from 'react-native';",
+      "import { useDispatch, useSelector } from 'react-redux';",
       "import PropTypes from 'prop-types';",
       "",
       "export function ${1:${TM_FILENAME_BASE}}(props) {",
@@ -82,11 +86,59 @@
     ],
     "description": "React Native Functional Component with React.memo default export"
   },
+  // Hooks
+  "useEffect": {
+    "prefix": "uef",
+    "body": [
+      "useEffect(() => {",
+      "\t$1",
+      "}, [$2]);"
+    ],
+    "description": "useEffect hook"
+  },
+  "useState": {
+    "prefix": "ust",
+    "body": [
+      "const [$1, $2] = useState($3);"
+    ],
+    "description": "useState hook"
+  },
+  "useMemo": {
+    "prefix": "ume",
+    "body": [
+      "const $1 = useMemo(($2) => $3, [$4]);"
+    ],
+    "description": "useMemo hook"
+  },
+  "useCallback": {
+    "prefix": "uca",
+    "body": [
+      "const $1 = useCallback(($2) => {",
+      "\t$3",
+      "}, [$4]);"
+    ],
+    "description": "useCallback hook"
+  },
+  "useDispatch": {
+    "prefix": "udi",
+    "body": [
+      "const dispatch = useDispatch();"
+    ],
+    "description": "useDispatch hook"
+  },
+  "useSelector": {
+    "prefix": "usl",
+    "body": [
+      "const $1 = useSelector($2);"
+    ],
+    "description": "useSelector hook"
+  },
+  // PropTypes
   "PropTypes": {
     "prefix": "pt",
     "body": [
-      "${1}.propTypes = {",
-      "",
+      "${1:${TM_FILENAME_BASE}}.propTypes = {",
+      "$2",
       "};"
     ],
     "description": "Create PropTypes"
@@ -94,8 +146,8 @@
   "defaultProps": {
     "prefix": "dfp",
     "body": [
-      "${1}.defaultProps = {",
-      "",
+      "${1:${TM_FILENAME_BASE}}.defaultProps = {",
+      "$2",
       "};"
     ],
     "description": "Create Default Props"
@@ -256,9 +308,10 @@
     ],
     "description": "An object taking on a particular shape required"
   },
+  // JS
   "consoleLog": {
     "prefix": "clg",
-    "body": "console.log(${1:object})",
+    "body": "console.log($1)",
     "description": "Displays a message in the console"
   }
 }

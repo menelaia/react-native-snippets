@@ -7,6 +7,7 @@
 
 Extension provides useful React/React Native snippets that will improve your developer experience.
 
+
 ## ✨ List of supported snippets
 
 ### 🗂️ React Native Components
@@ -15,7 +16,6 @@ Extension provides useful React/React Native snippets that will improve your dev
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 export function $1(props) {
@@ -37,7 +37,6 @@ $1.defaultProps = {
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 export default function $1(props) {
@@ -59,7 +58,6 @@ $1.defaultProps = {
 ```javascript
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Text, View } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 export function $1(props) {
@@ -79,6 +77,13 @@ $1.defaultProps = {
 export default React.memo($1);
 ```
 
+### 📔 React Redux
+
+#### `rdxi→`
+```javascript
+import { useDispatch, useSelector } from 'react-redux';
+```
+
 ### 📄 Hooks
 
 |Hook|Shortcut|Method|
@@ -89,40 +94,6 @@ export default React.memo($1);
 |`useCallback`|`uca→`|`const $1 = useCallback(($2) => {$3}, [$4]);`|
 |`useDispatch`|`udi→`|`const dispatch = useDispatch();`|
 |`useSelector`|`usl→`|`const $1 = useSelector($2);`|
-
-#### • useEffect, `uef→`
-```javascript
-useEffect(() => {
-    $1
-}, [$2]);
-```
-
-#### • useState, `ust→`
-```javascript
-const [$1, $2] = useState($3);
-```
-
-#### • useMemo, `ume→`
-```javascript
-const $1 = useMemo(($2) => $3, [$4]);
-```
-
-#### • useCallback, `uca→`
-```javascript
-const $1 = useCallback(($2) => {
-    $3
-}, [$4]);
-```
-
-#### • useDispatch, `udi→`
-```javascript
-const dispatch = useDispatch();
-```
-
-#### • useSelector, `usl→`
-```javascript
-const $1 = useSelector($2);
-```
 
 ### 🗂️ PropTypes
 
